@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //for loop-when no of iteration is certain
+    let student_list=["Abhishek","Rohan","Ritesh","Shivam","Satyarth","Satyam"];
+    for(let i=0;i<student_list.length;i++){
+        console.log(student_list[i]);
+    }
+        //while loop-when no of iterations are not certain
+    let x=0;
+    while(x<student_list.length){
+        console.log(student_list[x]);
+        x++;
+    }
+         //for ...of loop
+         //iterates over the values ofiterable objects(like-arrays,strings,Maps and Sets)
+         for(let y of student_list){
+            console.log(y);
+         }
+    let Ab={name:"Abhishek",course:"btech",class:"cse-ds",btech_year:1,semester:2};
+    for(let z in Ab){
+        console.log(Ab[z]);
+    }   
+
+         
+
+    </script>
+</body>
+</html>
