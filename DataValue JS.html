@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Primitive :Single value (immutable)
+           //string/number/boolean/null/undefined//symbol/bigint
+           let name="Abhay";
+           console.log(name);
+           console.log(typeof(name));
+           let age=18;
+           let ismarried=false;
+           let address=null;
+           let education;
+           console.log(address);
+           console.log(typeof(ismarried));
+           //Big Int
+           let salary=BigInt(477583839485558999);
+           console.log(salary);
+           //Symbol
+           let name1=Symbol("Siraj");
+           let name2=Symbol("Siraj");
+           console.log(name1==name2);
+
+
+
+        // Non-Primitive /REfrence/:Multiple value (mutable)
+           //object/array/function
+           //object- An object is an collection of its keys and values.   
+           let student ={ name:"Vikas",
+           age:23,
+           ismarried:true,
+           address:{
+            houseno:142,
+            city:"ghaziabad",
+            state:"Up"
+
+           }
+           ,course:"Btech",
+           branch:"CSE",
+           year:2025,
+           getInfo:function(){
+            return "My education is"+" "+ student.course+ " "+student.branch +" " + " and year is" +" "+ student.year;
+           }
+};
+           console.log(student);
+           // access object's key/property
+           //using dot notation
+           console.log(student.name+" "+student.age+" "+student.ismarried+" "+student.address.state);
+           console.log(typeof(student));
+           console.log(student.getInfo());
+           // find object's property in object
+           console.log("name" in student);
+           //delete object property
+           console.log(delete student.age);
+           console.log(student);
+           console.log("age" in student);
+           //access object's keys/property using bracket notation
+           console.log(student["ismarried"]);
+           
+
+
+
+    </script>
+    
+</body>
+</html>
