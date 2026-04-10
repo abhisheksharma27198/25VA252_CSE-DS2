@@ -1,0 +1,48 @@
+
+<html>
+<head>
+    <title>Practical Assessment</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #container {
+            text-align: center;
+            padding: 40px;
+            border-radius: 12px;
+            border: 2px dashed blue;
+        }
+        button {
+            padding: 10px;
+            cursor: pointer;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <h1 id="message">Click to transform </h1>
+        <button id="action-btn">Magic Button</button>
+    </div>
+
+    <script>
+        const btn = document.getElementById('action-btn');
+        const body = document.body;
+        const text = document.getElementById('message');
+        let size = 24;
+        btn.addEventListener('click', function() {
+            body.style.backgroundColor = "blue";
+            text.style.color = "black";
+            size += 5; 
+            text.style.fontSize = size + "px";
+            btn.innerText = "Again!";
+        });
+    </script>
+
+</body>
+</html>
